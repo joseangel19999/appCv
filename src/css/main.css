@@ -12,9 +12,31 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--theme-color);
     color: var(--text-color);
+    padding-top: 70px;
 }
 
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.horizontal-paddig {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media screen and(min-width:950px) {
+    .horizontal-paddig {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }

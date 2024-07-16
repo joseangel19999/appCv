@@ -6,6 +6,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
+    entry: {
+        app: "./src/index.js"
+    },
     output: {
         clean: true
     },

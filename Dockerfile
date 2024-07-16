@@ -1,8 +1,8 @@
 FROM node:16.18.0-alpine
-WORKDIR /app/
-COPY package.json ./
+WORKDIR /usr/src/app
+COPY . .
 RUN npm install
-COPY . ./
-EXPOSE 8011
-RUN npm run build:dev
+EXPOSE 8000
+#COPY . ./
+#RUN npm run build:dev
 CMD ["npm", "run","start"]

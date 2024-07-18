@@ -14,6 +14,8 @@ module.exports = {
         port:'0'
     },
     output: {
+        path: __dirname + "/public",
+        chunkFilename: 'app.js',
         clean: true
     },
     module: {

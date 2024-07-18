@@ -5,4 +5,4 @@ RUN npm install
 EXPOSE 3000
 #COPY . ./
 RUN npm run build:dev
-CMD ["npm", "run","start"]
+CMD ["npm", "run","dev:server"]

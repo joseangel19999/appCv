@@ -3,20 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 
+/*const HtmlWebpackPlugin= new HtmlWebpackPlugin({
+   template: "./src/index.html",
+   filename: "./index.html"
+});*/
 
 module.exports = {
     mode: 'development',
     entry: {
         app: "./src/index.js"
-    },
-    devServer: {
-        host: '0.0.0.0',
-        port:'0'
-    },
-    output: {
-        path: __dirname + "/public",
-        chunkFilename: 'app.js',
-        clean: true
     },
     module: {
         rules: [

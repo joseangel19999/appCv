@@ -1,6 +1,18 @@
 import './css/main.css';
 import { menuHeader } from './js/menuheader';
 menuHeader();
+
+document.addEventListener("DOMContentLoaded",showTarggeta);
+
+
+function showTarggeta(){
+    let fetchRes = fetch(
+        "https://jsonplaceholder.typicode.com/todos/1");
+        fetchRes.then(res =>
+          res.json()).then((d) => {
+            console.log("DATA: "+JSON.stringify(d));
+          });
+}
 /* import './css/menuLateral.css'; */
 
 /* const menu = document.querySelector(".menu");
